@@ -1,0 +1,40 @@
+/* List Styles */
+
+#lista-compra {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #lista-compra > li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  #lista-compra > li:last-child {
+    border-bottom: none;
+  }
+  
+  #lista-compra > li:hover {
+    background-color: #b1b1b1;
+  }
+  
+  #lista-compra li ol {
+    padding-left: 20px;
+  }
+  
+  #lista-compra li ol li {
+    padding: 5px 0;
+  }
+  
+  /* Total Styles */
+  
+  h3 {
+    margin-top: 20px;
+    font-weight: bold;
+  }
+  
+  h3 span {
+    font-weight: normal;
+    color: #ff0000;
+  }
