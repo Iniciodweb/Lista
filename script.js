@@ -23,7 +23,11 @@ const productosComida = [
     { nombre: 'Chorizo', precio: 4500, enlace: 'https://domicilios.tiendasd1.com/p/chorizo-campesino-ahumado-viande-225-grs-12000081' },
     { nombre: 'Huevos', precio: 18000 },
     { nombre: 'Queso', precio: 16000 },
-    { nombre: 'Arepa maiz con avena', precio: 4500, enlace: 'https://domicilios.tiendasd1.com/p/arepa-de-maiz-con-avena-y-chia-masmai-12002550' }
+    { nombre: 'Arepa maiz con avena', precio: 4500, enlace: 'https://domicilios.tiendasd1.com/p/arepa-de-maiz-con-avena-y-chia-masmai-12002550' },
+    { nombre: 'Azúcar morena', precio: 5000, enlace: 'https://domicilios.tiendasd1.com/p/azucar-morena-1000-grs-12000250' }, 
+    { nombre: 'Esparcible multiusos mantequilla :v', precio: 5000, enlace: 'https://domicilios.tiendasd1.com/p/esparcible-multiusos-rama-250-g-12003456' }, 
+    { nombre: 'Espagueti', precio: 2200, enlace: 'https://domicilios.tiendasd1.com/p/spaghetti-doria-250-g-12003256' } ,
+    { nombre: 'Sal', precio: 2200, enlace: 'https://domicilios.tiendasd1.com/p/sal-refisal-1000-g-12002874' } 
 ];
 
 const productosAseo = [
@@ -31,7 +35,12 @@ const productosAseo = [
     { nombre: 'Papel higiénico', precio: 14100, enlace: 'https://domicilios.tiendasd1.com/p/papel-higienico-3-h-12-un-rendy-33-mts-12004365' },
     { nombre: 'Bolsas de basura', precio: 1900, enlace: 'https://domicilios.tiendasd1.com/p/bolsa-de-basura-negra-tipo-hogar-tidy-house-10-und-12000273' },
     { nombre: 'Ambientador de baño', precio: 6000, enlace: 'https://domicilios.tiendasd1.com/p/ambientador-en-aerosol-manzana-canela-hosh-360-ml-12003570' },
-    { nombre: 'Crema dental', precio: 6500, enlace: 'https://domicilios.tiendasd1.com/p/crema-dental-triple-accion-colgate-100-ml-12000106' }
+    { nombre: 'Crema dental', precio: 6500, enlace: 'https://domicilios.tiendasd1.com/p/crema-dental-triple-accion-colgate-100-ml-12000106' },
+    { nombre: 'Desmaquillante', precio: 8000, enlace: 'https://domicilios.tiendasd1.com/p/desmaquillante-bifasico-delia-150-ml-12004164' }, 
+    { nombre: 'Toalla femenina', precio: 8600, enlace: 'https://domicilios.tiendasd1.com/p/toalla-femenina-invisible-nosotras-24-und-12002481' }, 
+    { nombre: 'Pomos de algodón', precio: 3000, enlace: 'https://domicilios.tiendasd1.com/p/pomos-de-algodon-natural-feeling-50-und-12001225' }, 
+    { nombre: 'Acondicionador', precio: 7000, enlace: 'https://domicilios.tiendasd1.com/p/acondicionador-kolors-surtido-400-ml-12004348' }, 
+    { nombre: 'Desengrante', precio: 2500, enlace: 'https://domicilios.tiendasd1.com/p/desengrasante-brilla-king-500-ml-12000240' } 
 ];
 
 const productosCarnes = [
@@ -99,3 +108,4 @@ crearLista(listaCarnes, productosCarnes); // Create the "Carnes" list
 
 // Mostrar los totales iniciales
 actualizarTotal();
+
