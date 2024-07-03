@@ -1,4 +1,58 @@
 /* List Styles */
+#body {
+  background-color: #313131;
+}
+.mi-checkbox:checked + a,
+.mi-checkbox:checked + span {
+  color: #8d79ff;
+}
+.mi-checkbox {
+  width: 30px;
+  height: 30px;
+}
+a:link {
+  color: rgb(255, 255, 255); /* Color del enlace sin visitar */
+}
+
+a:visited {
+  color: rgb(181, 181, 181); /* Color del enlace visitado */
+}
+
+a:hover {
+  color: rgb(252, 252, 252); /* Color al pasar el ratón por encima */
+}
+
+a:active {
+  color: rgb(65, 65, 65); /* Color al hacer clic */
+}
+
+a:focus {
+  color: rgb(179, 0, 255); /* Color cuando el enlace está seleccionado */
+}
+#titulo {
+  background-color: #272727;
+  color: #8000ff;
+  font-size: 25px;
+  text-align: center;
+}
+#aseo {
+  color: rgb(255, 255, 255);
+  background-color: #0e0e0e;
+  text-align: center;
+  font-size: 23px;
+}
+#carne {
+  color: rgb(255, 255, 255);
+  background-color: #0e0e0e;
+  text-align: center;
+  font-size: 23px;
+}
+#comida {
+  color: rgb(255, 255, 255);
+  background-color: #0e0e0e;
+  text-align: center;
+  font-size: 23px;
+}
 
 #lista-compra {
     list-style: none;
@@ -8,15 +62,11 @@
   
   #lista-compra > li {
     padding: 10px;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid #252020;
   }
   
   #lista-compra > li:last-child {
     border-bottom: none;
-  }
-  
-  #lista-compra > li:hover {
-    background-color: #b1b1b1;
   }
   
   #lista-compra li ol {
@@ -25,6 +75,9 @@
   
   #lista-compra li ol li {
     padding: 5px 0;
+    color: rgb(181, 181, 181);
+    background-color: #2c2c2c;
+    font-size: 19px;
   }
   
   /* Total Styles */
@@ -39,3 +92,23 @@
     color: #ff0000;
   }
   
+#aseo-lista, #carnes, #comida-lista {
+  background-color: #242424;
+  font-size: 23px;
+}
+
+#totales, #total-carnes, #total-aseo, #total-comida {
+  color: #fafafa;
+  background-color: #252525;
+  padding: 5px;
+}
+#totall {
+  color: #fafafa;
+}
+#lista-compra {
+  background-color: #242424;
+}
+#total, #totall {
+  font-size: 30px;
+}
+/*amo programar

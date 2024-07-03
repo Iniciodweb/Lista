@@ -53,6 +53,7 @@ function crearLista(lista, productos) {
     productos.forEach(producto => {
         const li = document.createElement('li');
         const checkbox = document.createElement('input');
+        checkbox.classList.add('mi-checkbox');
         checkbox.type = 'checkbox';
         checkbox.addEventListener('change', actualizarTotal);
         li.appendChild(checkbox); 
