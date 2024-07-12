@@ -125,7 +125,7 @@ a:focus {
 }
 .mi-checkbox:checked + span {
   color: rgb(252, 252, 252); /* Color al pasar el ratón por encima */
-  background-color: #7300ff;
+  background-color: #c300ff;
   padding-left: 10px;
   padding-right: 10px;
   font-size: 22px;
