@@ -2,10 +2,6 @@
 #body {
   background-color: #313131;
 }
-.mi-checkbox:checked + a,
-.mi-checkbox:checked + span {
-  color: #8d79ff;
-}
 .mi-checkbox {
   width: 30px;
   height: 30px;
@@ -18,8 +14,13 @@ a:visited {
   color: rgb(181, 181, 181); /* Color del enlace visitado */
 }
 
-a:hover {
+a:hover  {
   color: rgb(252, 252, 252); /* Color al pasar el ratón por encima */
+  background-color: #8000ff;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 22px;
+  border-radius: 6px;
 }
 
 a:active {
@@ -110,5 +111,24 @@ a:focus {
 }
 #total, #totall {
   font-size: 30px;
+}
+.productos_nolink {
+  color: #ffffff;
+}
+.productos_nolink:hover, .mi-checkbox:checked + a {
+  color: rgb(252, 252, 252); /* Color al pasar el ratón por encima */
+  background-color: #8000ff;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 22px;
+  border-radius: 6px;
+}
+.mi-checkbox:checked + span {
+  color: rgb(252, 252, 252); /* Color al pasar el ratón por encima */
+  background-color: #7300ff;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 22px;
+  border-radius: 6px;
 }
 /*amo programar

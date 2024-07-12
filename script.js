@@ -31,7 +31,7 @@ const productosComida = [
 ];
 
 const productosAseo = [
-    { nombre: 'Enjuague bucal', precio: 6600, enlace: 'https://domicilios.tiendasd1.com/p/enjuague-bucal-cero-alcohol-bucarine-500-ml-12000185' },
+    { nombre: 'Enjuague bucal', precio: 6600, enlace: 'https://domicilios.tiendasd1.com/p/enjuague-bucal-cero-alcohol-bucarine-500-ml-12000185', },
     { nombre: 'Papel higiénico', precio: 14100, enlace: 'https://domicilios.tiendasd1.com/p/papel-higienico-3-h-12-un-rendy-33-mts-12004365' },
     { nombre: 'Bolsas de basura', precio: 1900, enlace: 'https://domicilios.tiendasd1.com/p/bolsa-de-basura-negra-tipo-hogar-tidy-house-10-und-12000273' },
     { nombre: 'Ambientador de baño', precio: 6000, enlace: 'https://domicilios.tiendasd1.com/p/ambientador-en-aerosol-manzana-canela-hosh-360-ml-12003570' },
@@ -57,7 +57,8 @@ function crearLista(lista, productos) {
         checkbox.type = 'checkbox';
         checkbox.addEventListener('change', actualizarTotal);
         li.appendChild(checkbox); 
-        // If the product has a link, create an anchor element
+
+        // Creamos un elemento <a> solo si hay enlace
         if (producto.enlace) {
             const enlace = document.createElement('a');
             enlace.href = producto.enlace;
@@ -65,10 +66,14 @@ function crearLista(lista, productos) {
             enlace.textContent = producto.nombre;
             li.appendChild(enlace);
         } else {
-            // Otherwise, just add the product name as text
-            li.appendChild(document.createTextNode(producto.nombre));
+            // Si no hay enlace, solo agregamos el texto
+            const nombreSpan = document.createElement('span');
+            nombreSpan.textContent = producto.nombre;
+            nombreSpan.className = 'productos_nolink'
+            li.appendChild(nombreSpan);
         }
-        li.appendChild(document.createTextNode(` $${producto.precio.toLocaleString()}`)); 
+
+        li.appendChild(document.createTextNode(` $${producto.precio.toLocaleString()}`));
         lista.appendChild(li);
     });
 }
