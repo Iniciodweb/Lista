@@ -76,7 +76,27 @@ function crearLista(lista, productos) {
         li.appendChild(document.createTextNode(` $${producto.precio.toLocaleString()}`));
         lista.appendChild(li);
     });
-}
+} //
+document.addEventListener('DOMContentLoaded', () => {
+    const nombresProductos = document.querySelectorAll('.productos_nolink, a'); // Seleccionamos tanto enlaces como spans con la clase
+
+    nombresProductos.forEach(nombre => {
+        nombre.addEventListener('click', (event) => {
+            // Verificamos si el clic fue en un enlace
+            if (event.target.tagName === 'A') {
+                return; // Si es un enlace, no hacemos nada (permitimos que el enlace funcione)
+            }
+
+            // Si no es un enlace, buscamos el checkbox asociado y lo alternamos
+            const li = event.target.closest('li'); 
+            const checkbox = li.querySelector('.mi-checkbox');
+            checkbox.checked = !checkbox.checked;
+
+            // Actualizamos el total
+            actualizarTotal();
+        });
+    });
+}); //
 
 function actualizarTotal() {
     totalAseo = 0;
