@@ -3,8 +3,8 @@
   background-color: #313131;
 }
 .mi-checkbox {
-  width: 30px;
-  height: 30px;
+  width: 25px;
+  height:25px;
 }
 a:link {
   color: rgb(255, 255, 255); /* Color del enlace sin visitar */
@@ -12,15 +12,6 @@ a:link {
 
 a:visited {
   color: rgb(181, 181, 181); /* Color del enlace visitado */
-}
-
-a:hover  {
-  color: rgb(252, 252, 252); /* Color al pasar el ratón por encima */
-  background-color: #8000ff;
-  padding-left: 10px;
-  padding-right: 10px;
-  font-size: 22px;
-  border-radius: 6px;
 }
 
 a:active {
@@ -114,21 +105,85 @@ a:focus {
 }
 .productos_nolink {
   color: #ffffff;
-}
-.productos_nolink:hover, .mi-checkbox:checked + a {
+  font-size: 22px;
   color: rgb(252, 252, 252); /* Color al pasar el ratón por encima */
-  background-color: #8000ff;
+  background-color: rgba(255, 23, 166, 0.094);
   padding-left: 10px;
   padding-right: 10px;
-  font-size: 22px;
-  border-radius: 6px;
+  border-radius: 3px;
+  transition: all 0.5s ease-in-out;
+}
+.productos_nolink:hover{
+  color: rgb(252, 252, 252); /* Color al pasar el ratón por encima */
+  padding-left: 10px;
+  padding-right: 10px;
+  transform: translateY(-15px);
+  transition: 0.5s ease-in-out;
+  border-radius: 11px;
+  background-color: #d400ff;
+  font-size: 25px;
+}
+.mi-checkbox:checked + a {
+  color: rgb(252, 252, 252); /* Color al pasar el ratón por encima */
+  padding-left: 10px;
+  padding-right: 10px;
+  transform: translateY(-15px);
+  transition: 0.5s ease-in-out;
+  border-radius: 11px;
+  background-color: #7300ff;
+  font-size: 25px;
 }
 .mi-checkbox:checked + span {
   color: rgb(252, 252, 252); /* Color al pasar el ratón por encima */
   background-color: #c300ff;
   padding-left: 10px;
   padding-right: 10px;
+  font-size: 25px;
+  border-radius: 11px;
+  transition: 0.5s ease-in-out;
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 15px;
+  
+}
+.card {
+  background-color: #7b00f6;
+  position: sticky;
+  top: 0;
+  right: 0;
+  width: 100px;
+  height: 100px;
+  border-radius: 15%;
+  cursor: pointer;
+  box-shadow: rgba(100, 100, 111, 0.2)
+  0px 7px 13px 0px;
+  transition: all 0.3s ease-in-out;
+}
+.card:hover {
+  transform: translateY(-15px);
+  transition: 0.3s ease-in-out;
+  border-radius: 25%;
+}
+.container:hover > :not(:hover) {
+  opacity: 0.5;
+}
+a:hover  {
+  transform: translateY(-15px);
+  transition: 0.5s ease-in-out;
+  border-radius: 11px;
+  background-color: #8000ff;
+  font-size: 25px;
+}
+a {
+  color: rgb(252, 252, 252); /* Color al pasar el ratón por encima */
+  background-color: rgba(128, 0, 255, 0.075);
+  padding-left: 10px;
+  padding-right: 10px;
   font-size: 22px;
-  border-radius: 6px;
+  border-radius: 3px;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
 }
 /*amo programar
