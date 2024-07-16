@@ -111,14 +111,14 @@ a:focus {
   padding-left: 10px;
   padding-right: 10px;
   border-radius: 3px;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 .productos_nolink:hover{
   color: rgb(252, 252, 252); /* Color al pasar el ratón por encima */
   padding-left: 10px;
   padding-right: 10px;
   transform: translateY(-15px);
-  transition: 0.5s ease-in-out;
+  transition: 0.2s ease-in-out;
   border-radius: 11px;
   background-color: #d400ff;
   font-size: 25px;
@@ -128,7 +128,7 @@ a:focus {
   padding-left: 10px;
   padding-right: 10px;
   transform: translateY(-15px);
-  transition: 0.5s ease-in-out;
+  transition: 0.2s ease-in-out;
   border-radius: 11px;
   background-color: #7300ff;
   font-size: 25px;
@@ -140,7 +140,7 @@ a:focus {
   padding-right: 10px;
   font-size: 25px;
   border-radius: 11px;
-  transition: 0.5s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
 .container {
   display: grid;
@@ -171,7 +171,7 @@ a:focus {
 }
 a:hover  {
   transform: translateY(-15px);
-  transition: 0.5s ease-in-out;
+  transition: 0.2s ease-in-out;
   border-radius: 11px;
   background-color: #8000ff;
   font-size: 25px;
@@ -183,7 +183,7 @@ a {
   padding-right: 10px;
   font-size: 22px;
   border-radius: 3px;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.3s ease-in-out;
   cursor: pointer;
 }
 /*amo programar
